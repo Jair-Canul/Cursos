@@ -15,7 +15,7 @@ print(f'resta: {resta}')
 multiplicacion= a * b
 print(f'multiplicación: {multiplicacion}')
 
-#división
+#división (retorna un tipo float)
 division = a/b
 print(f'división: {division: .2f}')
 
@@ -28,5 +28,5 @@ modulo = a % b
 print(f'módulo: {modulo}')
 
 #Exponente
-exponente = a**b
-print(f'exponente: {exponente}')
+exponente = a**b # 10^3 = 10*10*10
+print(f'exponente: {exponente}') 

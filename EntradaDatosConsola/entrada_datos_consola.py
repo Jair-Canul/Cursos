@@ -1,17 +1,17 @@
-#Entrada de datos por consola
+#Programa: Entrada Datos Python
 
-#Ejemplo, sin ningún mensaje al inicio
-#nombre = input()
-#print(f'Recibiste el valor de nombre: {nombre}')
+nombre = input("Proporciona tu nombre: ")
 
-#Ejemplo con indicaciones
-nombre = input('Porfavor, introduce tu nombre: ')
-print(f'Recibiendo el valor de nombre: {nombre}')
+print(f"Tu nombre es {nombre}")
 
-#pedir la edad al usuario (entrar como cadena, y lo convertios a numero)
-#edad = input('Introduce tu edad: ')
-#print(f'Tu edad es: {edad}')
+#Cuidado con la conversión de tipos al trabajar con valores numericos
+#Forma correcta: Envolover con int() o float()
 
-#La dad al usuario, pero convirtiendo el valor a entero
-edad = int(input('Introduce tu edad: '))
-print(f'Tu edad es:{edad} \nEn 5 años tendrás: {edad + 5}')
+#Para enteros (edad, cantidad)
+edad= int(input("Tu edad:"))
+print(f"Tu edad es {edad} años")
+print(f"Tu edad dentro de 5 años será: {edad+5} años")
+
+#Para decimales (precios, estaturas)
+altura = float(input("Tu altura: "))
+print(f"Tu altura es {altura} metros")

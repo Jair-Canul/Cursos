@@ -1,31 +1,26 @@
 #Version con entrada de datos
+#Generador de Email
+#Se solicita crear una nueva versión del sistema generador de emails
+# Para generar un email se debe solicitar: 
+# Nombre 
+# Apellidos
+# Nombre Empresa
+# Extensión Dominio
 
-print('*** Generador de Email Actualizado (Versión Jair) ***')
+#Entrada de datos
+nombres = input("Proporciona tu nombre(s):")
+apellidos = input("Proporciona tus apellidos: ")
+nombre_empresa = input("Proporciona el nombre de la empresa sin acentos: ")
+extension_dominio = input("Proporciona la extensión del dominio(.com, .es, .org): ")
 
-#Nombre
-nombre_user = input('Nombre(s):  ')
-nombre_user=nombre_user.strip().lower().replace(' ', '.')
-#print(nombre_user)
+#Proceso:
+nombres = nombres.lower().strip().replace(" ",".")
+apellidos = apellidos.lower().strip().replace(" ",".")
+nombre_empresa = nombre_empresa.lower().strip().replace(" ","")
 
-#Apellidos
-apellidos_user = input('Apellidos: ')
-apellidos_user=apellidos_user.strip().lower().replace(' ','.')
-#print(apellidos_user)
+#Generar email
+email = nombres+"."+apellidos+"@"+nombre_empresa+extension_dominio
 
-#Nombre compleo
-nombre_completo=nombre_user+'.'+apellidos_user
-#print(nombre_completo)
-
-#Nombre de la empresa
-nombre_empresa = input('Nombre de la empresa: ')
-nombre_empresa=nombre_empresa.lower().replace(' ','')
-#extensión del dominio
-extension_dominio = input('Ingrese la extensión del dominio: ')
-
-#correo completo
-correo_completo = nombre_completo + '@' + nombre_empresa + extension_dominio
-
-print(f''' 
-Tu nuevo Email generado por el sistema es:
-        {correo_completo}
-        !Felicidades¡''')
+print(f"""Tu email generado por el sistema es: 
+      {email}
+      ¡Gracias por utilizar el sistema!""")
