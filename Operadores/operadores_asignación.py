@@ -10,7 +10,7 @@ print(f'valor de la cadena: {cadena}')
 x, y, z = 5, 'Hola Mundo', -9.15
 print(f'\nValor de x = {x}, y = {y}, z = {z}')
 
- #Asignación en cadenada
+ #Asignación encadenada
 a = b = c = 10
 print(f'\nValor a = {a}, b = {b}, c = {c} ')
 
@@ -22,5 +22,5 @@ x, y = y, x
 print(f'Invertir los valores x = {x}, y = {y}')
 
 #recibir multiples Valores de la entrada del usuario
-nombre, apellido = input('Ingresa tu nombre y apellido separado por coma: ').split(',')
+nombre, apellido = input('Ingresa tu nombre y apellido separado por coma: ').split(',') #Especificamos el separador
 print(f'Nombre: {nombre.strip()}, Apellido: {apellido.strip()}')

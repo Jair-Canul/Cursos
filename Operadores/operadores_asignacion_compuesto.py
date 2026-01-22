@@ -19,5 +19,5 @@ print(f'operador a*=b es: {a}')
 #operador compuesto de división
 a = 10 #reiniciamos el valor de a
 a /= b
-print(f'operador a/=b es: {a}')
+print(f'operador a/=b es: {a:.2f}')
 

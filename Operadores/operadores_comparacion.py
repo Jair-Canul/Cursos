@@ -1,9 +1,9 @@
 print('*** Operadores Comparación (Relacionales) ***')
-a, b = 5, 5
-print(f'Valores iniciales de a: {a}, b:{b}')
+a, b = 7, 5
+print(f'Valores iniciales de a: {a}, b: {b}')
 
 #Operador igualdad ==
-resultado = a ==b
+resultado = a == b
 print(f'Resultado a == b: {resultado}')
 
 #Operador diferente !=
